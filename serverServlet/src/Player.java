@@ -2,7 +2,13 @@ public class Player {
 
     private String login;
     private String password;
-    private int rang=1;
+    private int id;
+
+    public Player(String login, String password, int id){
+        this.login=login;
+        this.password=password;
+        this.id=id;
+    }
 
     public Player(String login, String password){
         this.login=login;
@@ -17,4 +23,7 @@ public class Player {
         return password;
     }
 
+    public int getId() {
+        return id;
+    }
 }
