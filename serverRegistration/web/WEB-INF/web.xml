@@ -5,7 +5,7 @@
          version="4.0">
     <servlet>
         <servlet-name>servletEntry</servlet-name>
-        <servlet-class>servletEntry</servlet-class>
+        <servlet-class>servlets.servletEntry</servlet-class>
     </servlet>
     
     <servlet-mapping>
@@ -15,7 +15,7 @@
     
     <servlet>
         <servlet-name>servletRegistration</servlet-name>
-        <servlet-class>servletRegistration</servlet-class>
+        <servlet-class>servlets.servletRegistration</servlet-class>
     </servlet>
     
     <servlet-mapping>

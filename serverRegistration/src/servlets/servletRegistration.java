@@ -1,9 +1,16 @@
+package servlets;
+
+import database.Base;
+import filebase.PlayerSearch;
+import filebase.ReadFile;
+
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class servletRegistration extends HttpServlet {
@@ -14,23 +21,23 @@ public class servletRegistration extends HttpServlet {
         System.out.println("login: "+login);
         String password = req.getParameter("password");
         System.out.println("password: "+password);
-        ReadFile rf = new ReadFile();
-        ArrayList players = new ArrayList();
-        PlayerSearch playerSearch = new PlayerSearch();
+        Base base = new Base();
+        int id = 0;
         try {
-            rf.read(players);
-        } catch (IOException e1) {
-            e1.printStackTrace();
+            id = base.checkLogin(login);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        int id = playerSearch.checkLogin(players,login,password);
-        if (id !=-1)
-            rf.input(id,login,password);
+        if (id !=-1) {
+            try {
+                base.addPlayer(login, password);
+                id = base.checkPlayer(login, password);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
         os.print(id);
 
     }
 
-   /* @Override
-    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPut(req, resp);
-    }*/
 }
