@@ -1,10 +1,7 @@
 package servlets;
 
-import database.Base;
-import filebase.PlayerSearch;
-import filebase.ReadFile;
+import database.CheckPlayer;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
@@ -12,8 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.SQLException;
-import java.util.*;
 
 public class servletEntry extends HttpServlet {
         public void init(ServletConfig servletConfig) {
@@ -31,18 +26,10 @@ public class servletEntry extends HttpServlet {
             System.out.println("login: "+login);
             String password = req.getParameter("password");
             System.out.println("password: "+password);
-            //ReadFile rf = new ReadFile();
-            //ArrayList players = new ArrayList();
-            //try {
-            //    rf.read(players);
-            //} catch (IOException e1) {
-            //    e1.printStackTrace();
-            //}
-            //PlayerSearch playerSearch = new PlayerSearch();
-            Base base = new Base();
+
             int id = 0;
             try {
-                id = base.checkPlayer(login,password);
+                id = CheckPlayer.main(login, password);
             } catch (Exception e) {
                 e.printStackTrace();
             }
