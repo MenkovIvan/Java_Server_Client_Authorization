@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Client</string>
+    <string name="btnRegistr">Registration</string>
+    <string name="txtLogin">Write new login</string>
+    <string name="txtPassword1">Write password</string>
+    <string name="txtPassword2">Write password again</string>
+</resources>
