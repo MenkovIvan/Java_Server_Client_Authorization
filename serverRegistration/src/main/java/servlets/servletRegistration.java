@@ -19,7 +19,6 @@ public class servletRegistration extends HttpServlet {
         System.out.println("login: "+login);
         String password = req.getParameter("password");
         System.out.println("password: "+password);
-        Base base = new Base();
         int id = 0;
         try {
             id = CheckLogin.main(login);
