@@ -7,21 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7966dd3-14c6-4154-bac4-812b0ba5f30d" name="Default Changelist" comment="try to connect with database">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_47.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/serverRegistration.iml" beforeDir="false" afterPath="$PROJECT_DIR$/serverRegistration.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/database/AddPlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/database/CheckLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/database/CheckPlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/database/ConnectionMySQL.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/player/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/servletEntry.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/servletRegistration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -102,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/serverRegistration.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="21" column="49" lean-forward="true" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+            <state relative-caret-position="357">
+              <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -366,7 +352,7 @@
       <workItem from="1558612424745" duration="6350000" />
       <workItem from="1558727964494" duration="2757000" />
       <workItem from="1558779728162" duration="12000" />
-      <workItem from="1558799870703" duration="3021000" />
+      <workItem from="1558799870703" duration="3467000" />
     </task>
     <task id="LOCAL-00001" summary="try to connect with database">
       <created>1558568147577</created>
@@ -379,7 +365,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19810000" />
+    <option name="totallyTimeSpent" value="20256000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -391,7 +377,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.147651" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -403,7 +390,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -535,8 +522,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/serverRegistration.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="21" column="49" lean-forward="true" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+        <state relative-caret-position="357">
+          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
         </state>
       </provider>
     </entry>

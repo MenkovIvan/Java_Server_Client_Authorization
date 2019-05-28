@@ -1,6 +1,7 @@
 package servlets;
 
-import database.CheckPlayer;
+import database.CheckInformation;
+import database.UpdateInformation;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -29,7 +30,7 @@ public class servletEntry extends HttpServlet {
 
             int id = 0;
             try {
-                id = CheckPlayer.main(login, password);
+                id = CheckInformation.checkPlayer(login, password);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -38,6 +39,11 @@ public class servletEntry extends HttpServlet {
             }
             else{
                 System.out.println("player id: "+id);
+            }
+            try {
+                UpdateInformation.updateOnline(id, 1);
+            } catch (Exception e) {
+                e.printStackTrace();
             }
             //resp.setContentType(String.valueOf(id));
             os.print(id);
